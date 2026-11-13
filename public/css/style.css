@@ -1,0 +1,215 @@
+ :root {
+      /* warna kustom  */
+      --retro-bg: #F4F1E1;
+      --retro-primary: #FF6B35;
+      --retro-secondary: #004E98;
+      --retro-accent: #ECA72C;
+      --retro-dark: #111827;
+
+      --bs-body-bg: #F4F1E1;
+      --bs-body-color: #111827;
+      --bs-primary: #FF6B35;
+      --bs-primary-rgb: 255, 107, 53;
+      --bs-secondary: #004E98;
+      --bs-secondary-rgb: 0, 78, 152;
+      --bs-warning: #ECA72C;
+      --bs-warning-rgb: 236, 167, 44;
+      --bs-dark: #111827;
+      --bs-dark-rgb: 17, 24, 39;
+      --bs-border-color: #111827;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--retro-bg);
+      color: var(--retro-dark);
+      background-image: radial-gradient(rgba(17, 24, 39, 0.04) 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+
+    h1, h2, h3, h4, h5, h6, .navbar-brand, .sport-heading {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .retro-olympic-stripe {
+      height: 6px;
+      background: linear-gradient(90deg, 
+        #FF6B35 0%, #FF6B35 33.3%, 
+        #ECA72C 33.3%, #ECA72C 66.6%, 
+        #004E98 66.6%, #004E98 100%
+      );
+      border-bottom: 2px solid #111827;
+    }
+
+    .sport-card {
+      background-color: #ffffff;
+      border: 2.5px solid #111827;
+      border-radius: 12px;
+      box-shadow: 4px 4px 0px #111827;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .sport-card:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 6px 6px 0px #111827;
+    }
+
+    .sport-static-card {
+      background-color: #ffffff;
+      border: 2.5px solid #111827;
+      border-radius: 12px;
+      box-shadow: 5px 5px 0px #111827;
+    }
+
+    .sport-navbar {
+      background-color: #ffffff;
+      border-bottom: 2.5px solid #111827;
+      box-shadow: 0 4px 0px #111827;
+    }
+
+    /* Neo-Brutalist Buttons */
+    .sport-btn-primary {
+      background-color: #FF6B35 ;
+      color: #ffffff;
+      border: 2.5px solid #111827;
+      box-shadow: 3px 3px 0px #111827;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      transition: all 0.1s ease;
+    }
+
+    .sport-btn-primary:hover {
+      background-color: #f15922 ;
+      transform: translate(-1px, -1px);
+      box-shadow: 5px 5px 0px #111827;
+      color: #ffffff;
+    }
+
+    .sport-btn-primary:active {
+      transform: translate(2px, 2px);
+      box-shadow: 1px 1px 0px #111827;
+    }
+
+    .sport-btn-secondary {
+      background-color: #004E98;
+      color: #ffffff ;
+      border: 2.5px solid #111827;
+      box-shadow: 3px 3px 0px #111827;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      transition: all 0.1s ease;
+    }
+
+    .sport-btn-secondary {
+      background-color: #003e7a;
+      transform: translate(-1px, -1px);
+      box-shadow: 5px 5px 0px #111827;
+      color: #ffffff ;
+    }
+
+    .sport-btn-outline {
+      background-color: #F4F1E1;
+      color: #111827 ;
+      border: 2px solid #111827;
+      box-shadow: 2px 2px 0px #111827;
+      font-weight: 700;
+      font-family: 'Space Grotesk', sans-serif;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      transition: all 0.1s ease;
+    }
+
+    .sport-btn-outline:hover {
+      background-color: #e5e0cc;
+      color: #111827 ;
+      transform: translate(-1px, -1px);
+      box-shadow: 3px 3px 0px #111827;
+    }
+
+    /* Badges */
+    .sport-badge {
+      border: 1.5px solid #111827;
+      box-shadow: 2px 2px 0px #111827;
+      font-weight: 700;
+      font-family: 'Space Grotesk', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .badge-vip {
+      background-color: #FF6B35;
+      color: #ffffff ;
+      border: 2px solid #111827 ;
+      box-shadow: 2px 2px 0px #111827;
+    }
+
+    .badge-gold {
+      background-color: #ECA72C;
+      color: #111827 ;
+      border: 2px solid #111827 ;
+      box-shadow: 2px 2px 0px #111827;
+    }
+
+    .badge-basic {
+      background-color: #004E98 ;
+      color: #ffffff ;
+      border: 2px solid #111827 ;
+      box-shadow: 2px 2px 0px #111827;
+    }
+
+    /* Inputs */
+    .sport-input {
+      border: 2.5px solid #111827;
+      border-radius: 8px;
+      font-weight: 600;
+      color: #111827;
+      background-color: #ffffff;
+    }
+
+    .sport-input:focus {
+      border-color: #FF6B35 ;
+      box-shadow: 0 0 0 0.25rem rgba(255, 107, 53, 0.25) ;
+    }
+
+    /* Sport Table */
+    .table-sport thead th {
+      background-color: #004E98 ;
+      color: #ffffff ;
+      border-bottom: 2.5px solid #111827;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 800;
+      font-size: 0.85rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .table-sport tbody tr {
+      border-bottom: 1.5px solid #111827;
+    }
+
+    .table-sport tbody tr:hover {
+      background-color: #FFF9EE;
+    }
+
+    .pagination .page-link {
+      border: 2px solid #111827 ;
+      color: #111827;
+      font-weight: 800;
+      font-family: 'Space Grotesk', sans-serif;
+      margin: 0 2px;
+      border-radius: 6px ;
+      background-color: #ffffff;
+    }
+
+    .pagination .page-item.active .page-link {
+      background-color: #FF6B35;
+      border-color: #111827;
+      color: #ffffff;
+      box-shadow: 2px 2px 0px #111827;
+    }
